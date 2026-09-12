@@ -45,12 +45,12 @@ There is no backend, database, API or external library. Account credentials are 
 The functionality is intentionally fake because the entire purpose of the project is to accomplish nothing.
 
 # Screenshots (Add at least 3)
-![Landing Page](screenshots/Landingpage.png)
-![Sign In](screenshots/Signin.png)
-![Login](screenshots/Login.png)
-![Loading](screenshots/Loading.png)
-![Rewards](screenshots/Reward.png)
-![Useless](screenshots/Useless.png)
+![Landing Page](screenshots/Screenshot 2026-09-12 061704.png)
+![Sign In](screenshots/Screenshot 2026-09-12 061718.png)
+![Login](screenshots/Screenshot 2026-09-12 061805.png)
+![Loading](screenshots/Screenshot 2026-09-12 061820.png)
+![Rewards](screenshots/Screenshot 2026-09-12 061855.png)
+![Useless](screenshots/Screenshot 2026-09-12 061911.png)
 
 
 ---
