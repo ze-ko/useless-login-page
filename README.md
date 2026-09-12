@@ -2,50 +2,47 @@
 
 
 
-# [Project Name] 🎯
+# [Useless Login Page] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Off the Grid]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: [Sudev Santhosh] - [College of Enineering Trikaripur]
+- Member 2: [PM Pranav Subrahmanian] - [College of Engineering Trikaripur]
 
 ### Project Description
-[2-3 lines about what your project does]
+[Useless Login Page is a deliberately pointless website that turns a simple login into an unnecessarily long and frustrating experience. Users create an account, get denied despite entering the correct credentials, wait through a useless loading process, and finally receive absolutely nothing.
+]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[Modern websites are becoming too efficient. Users can log in quickly, access useful information, and actually accomplish things.
+
+We decided this was a problem.]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[We created a website that makes a simple login unnecessarily complicated.
+
+Users can create an account, log in with the correct credentials, get denied anyway, wait through a long loading screen, ignore a "DO NOT CLICK" warning, wait again, and eventually receive a completely useless reward.]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+-[HTML]
+-[CSS]
+-[JavaScript]
+-[Visual Studio Code]
+-[Git]
+-[GitHub]
 
 ### Implementation
-For Software:
-# Installation
-[commands]
+The website is built entirely using HTML, CSS and JavaScript.
 
-# Run
-[commands]
+There is no backend, database, API or external library. Account credentials are stored temporarily in JavaScript only and are not sent anywhere.
 
-### Project Documentation
-For Software:
+The functionality is intentionally fake because the entire purpose of the project is to accomplish nothing.
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
@@ -57,41 +54,11 @@ For Software:
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
 [Add your demo video link here]
 *Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
