@@ -2,16 +2,16 @@
 
 
 
-# [Useless Login Page] 🎯
+# Useless Login Page 🎯
 
 
 ## Basic Details
-### Team Name: [Off the Grid]
+### Team Name: Off the Grid
 
 
 ### Team Members
-- Member 1: [Sudev Santhosh] - [College of Enineering Trikaripur]
-- Member 2: [PM Pranav Subrahmanian] - [College of Engineering Trikaripur]
+- Member 1: Sudev Santhosh- College of Enineering Trikaripur
+- Member 2: PM Pranav Subrahmanian - College of Engineering Trikaripur
 
 ### Project Description
 [Useless Login Page is a deliberately pointless website that turns a simple login into an unnecessarily long and frustrating experience. Users create an account, get denied despite entering the correct credentials, wait through a useless loading process, and finally receive absolutely nothing.
@@ -45,20 +45,13 @@ There is no backend, database, API or external library. Account credentials are 
 The functionality is intentionally fake because the entire purpose of the project is to accomplish nothing.
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Landing Page](screenshots/Landingpage.png)
+![Sign In](screenshots/Signin.png)
+![Login](screenshots/Login.png)
+![Loading](screenshots/Loading.png)
+![Rewards](screenshots/Reward.png)
+![Useless](screenshots/Useless.png)
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
