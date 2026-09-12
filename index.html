@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         LANDING PAGE
+    ========================== -->
+    <section id="landing" class="screen active">
+        <div class="container">
+            <div class="logo">USELESS</div>
+
+            <h1>Welcome to the future.</h1>
+
+            <p class="subtitle">
+                The world's most unnecessary digital experience.
+            </p>
+
+            <button onclick="showScreen('signup')">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         SIGNUP PAGE
+    ========================== -->
+    <section id="signup" class="screen">
+        <div class="container card">
+
+            <div class="logo small">USELESS</div>
+
+            <h2>Create Your Account</h2>
+
+            <p class="description">
+                Join thousands of people accomplishing absolutely nothing.
+            </p>
+
+            <form onsubmit="createAccount(event)">
+
+                <label for="signupEmail">Email</label>
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="you@example.com"
+                    required
+                >
+
+                <label for="signupPassword">Password</label>
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Create a password"
+                    required
+                >
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    required
+                >
+
+                <p id="signupError" class="error"></p>
+
+                <button type="submit">
+                    Create Useless Account
+                </button>
+
+            </form>
+
+            <p class="fine-print">
+                By continuing, you agree to our Terms of Uselessness.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         ACCOUNT CREATED
+    ========================== -->
+    <section id="accountCreated" class="screen">
+        <div class="container">
+
+            <div class="success-icon">✓</div>
+
+            <h1>Congratulations!</h1>
+
+            <p class="subtitle">
+                Your account has been created.
+            </p>
+
+            <p class="description">
+                We have no idea what you signed up for.
+            </p>
+
+            <button onclick="showScreen('login')">
+                Continue to Login
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         LOGIN PAGE
+    ========================== -->
+    <section id="login" class="screen">
+        <div class="container card">
+
+            <div class="logo small">USELESS</div>
+
+            <h2>Welcome Back</h2>
+
+            <p class="description">
+                Please enter your credentials.
+            </p>
+
+            <form onsubmit="login(event)">
+
+                <label for="loginEmail">Email</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="you@example.com"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Your password"
+                    required
+                >
+
+                <p id="loginError" class="error"></p>
+
+                <button type="submit">
+                    Log In
+                </button>
+
+            </form>
+
+            <button
+                class="text-button"
+                onclick="forgotPassword()"
+            >
+                Forgot Password?
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         ACCESS DENIED
+    ========================== -->
+    <section id="accessDenied" class="screen">
+        <div class="container card">
+
+            <div class="denied-icon">×</div>
+
+            <h2>Access Denied</h2>
+
+            <div class="verification-box">
+
+                <div>
+                    <span>Email</span>
+                    <strong>Correct</strong>
+                </div>
+
+                <div>
+                    <span>Password</span>
+                    <strong>Correct</strong>
+                </div>
+
+                <div>
+                    <span>Account</span>
+                    <strong>Valid</strong>
+                </div>
+
+                <div>
+                    <span>Authentication</span>
+                    <strong>Successful</strong>
+                </div>
+
+                <div class="last-row">
+                    <span>Permission</span>
+                    <strong class="red">Absolutely not.</strong>
+                </div>
+
+            </div>
+
+            <p class="description">
+                Unfortunately, you are not allowed here.
+            </p>
+
+            <button onclick="goToLoading()">
+                Continue Anyway
+            </button>
+
+            <button
+                class="text-button"
+                onclick="showScreen('login')"
+            >
+                Try Again
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         LOADING PAGE
+    ========================== -->
+    <section id="loading" class="screen">
+        <div class="container loading-container">
+
+            <div class="logo small">USELESS</div>
+
+            <h2 id="loadingTitle">
+                Preparing Your Experience
+            </h2>
+
+            <p id="loadingMessage" class="description">
+                Loading uselessness...
+            </p>
+
+            <div class="progress-wrapper">
+
+                <div class="progress-bar">
+                    <div
+                        id="progress"
+                        class="progress"
+                    ></div>
+                </div>
+
+                <div class="progress-number">
+                    <span id="progressText">0</span>%
+                </div>
+
+            </div>
+
+            <button
+                id="dontClickButton"
+                class="danger-button"
+                onclick="resetLoading()"
+            >
+                DO NOT CLICK
+            </button>
+
+            <p id="clickMessage" class="click-message"></p>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         SUCCESS
+    ========================== -->
+    <section id="success" class="screen">
+        <div class="container">
+
+            <div class="success-icon big">✓</div>
+
+            <h1>YOU DID IT!</h1>
+
+            <p class="subtitle">
+                Your experience is ready.
+            </p>
+
+            <p class="description">
+                Against all odds, something has finally happened.
+            </p>
+
+            <button onclick="showScreen('reward')">
+                Claim Your Reward
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         REWARD
+    ========================== -->
+    <section id="reward" class="screen">
+        <div class="container card">
+
+            <div class="reward-icon">🎁</div>
+
+            <h2>Your Reward</h2>
+
+            <p class="description">
+                Your reward is...
+            </p>
+
+            <div class="reward-box">
+                <strong>This message.</strong>
+            </div>
+
+            <p class="description">
+                Thank you for wasting your time.
+            </p>
+
+            <button onclick="showDashboard()">
+                Continue
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+    <section id="dashboard" class="screen">
+        <div class="dashboard">
+
+            <header class="dashboard-header">
+
+                <div class="logo small">
+                    USELESS
+                </div>
+
+                <button
+                    class="settings-button"
+                    onclick="showScreen('settings')"
+                >
+                    Settings
+                </button>
+
+            </header>
+
+
+            <main class="dashboard-content">
+
+                <h1>Welcome.</h1>
+
+                <p class="dashboard-subtitle">
+                    Your personal dashboard.
+                </p>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <span>Users</span>
+                        <strong>1</strong>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Purpose</span>
+                        <strong>0%</strong>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Productivity</span>
+                        <strong>0%</strong>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Useful Things</span>
+                        <strong>0</strong>
+                    </div>
+
+                </div>
+
+                <div class="empty-dashboard">
+
+                    <div class="empty-icon">
+                        ∅
+                    </div>
+
+                    <h2>There is nothing here.</h2>
+
+                    <p>
+                        You successfully completed the entire process
+                        to arrive at absolutely nothing.
+                    </p>
+
+                </div>
+
+            </main>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         SETTINGS
+    ========================== -->
+    <section id="settings" class="screen">
+
+        <div class="container card settings-card">
+
+            <div class="settings-header">
+
+                <div>
+                    <div class="logo small">
+                        USELESS
+                    </div>
+
+                    <h2>Settings</h2>
+                </div>
+
+                <button
+                    class="back-button"
+                    onclick="showDashboard()"
+                >
+                    ← Back
+                </button>
+
+            </div>
+
+
+            <div class="setting">
+
+                <div>
+                    <strong>Dark Mode</strong>
+                    <span>It's already dark enough.</span>
+                </div>
+
+                <button
+                    class="toggle active"
+                    onclick="toggleSetting(this)"
+                >
+                    ON
+                </button>
+
+            </div>
+
+
+            <div class="setting">
+
+                <div>
+                    <strong>Useless Animations</strong>
+                    <span>Make things move for no reason.</span>
+                </div>
+
+                <button
+                    class="toggle active"
+                    onclick="toggleSetting(this)"
+                >
+                    ON
+                </button>
+
+            </div>
+
+
+            <div class="setting">
+
+                <div>
+                    <strong>Useless Sounds</strong>
+                    <span>Make noises for no reason.</span>
+                </div>
+
+                <button
+                    class="toggle"
+                    onclick="toggleSetting(this)"
+                >
+                    OFF
+                </button>
+
+            </div>
+
+
+            <div class="setting">
+
+                <div>
+                    <strong>Account Purpose</strong>
+                    <span>Why does this account exist?</span>
+                </div>
+
+                <strong class="nothing">
+                    NONE
+                </strong>
+
+            </div>
+
+
+            <div class="setting">
+
+                <div>
+                    <strong>Make Website More Useless</strong>
+                    <span>This setting does nothing.</span>
+                </div>
+
+                <button
+                    class="toggle active"
+                    onclick="toggleSetting(this)"
+                >
+                    ON
+                </button>
+
+            </div>
+
+
+            <div class="danger-zone">
+
+                <h3>Danger Zone</h3>
+
+                <button
+                    class="delete-button"
+                    onclick="deleteAccount()"
+                >
+                    Delete Account
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
